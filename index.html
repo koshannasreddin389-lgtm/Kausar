@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="kk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080817">
+  <meta name="description" content="Жұлдыздар мен жүрекке толы кішкентай ғалам.">
+  <title>Менің әлеміме қош келдің ✦</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <canvas class="sky" id="sky" aria-label="Басқанда комплимент айтатын жұлдызды аспан"></canvas>
+  <div class="nebula nebula-one" aria-hidden="true"></div>
+  <div class="nebula nebula-two" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Басты бет">✦ <span>Біздің ғалам</span></a>
+    <nav aria-label="Негізгі мәзір">
+      <a class="active" href="index.html">Басты бет</a>
+      <a href="universe.html">Ғаламымыз</a>
+      <a href="gallery.html">Галерея</a>
+      <a href="letter.html">Саған хат</a>
+    </nav>
+  </header>
+  <main class="hero">
+    <p class="eyebrow"><span class="tiny-star">✦</span> Тек екеумізге арналған кішкентай ғалам</p>
+    <section class="heart-stage" aria-label="Жүрек пен оның айналасындағы жарқыраған жұлдыздар">
+      <div class="orbit orbit-a" aria-hidden="true"></div>
+      <div class="orbit orbit-b" aria-hidden="true"></div>
+      <div class="orbit orbit-c" aria-hidden="true"></div>
+      <div class="heart-wrap" aria-hidden="true">
+        <svg class="heart" viewBox="0 0 220 205" role="img" aria-label="Соғатын жүрек">
+          <defs>
+            <linearGradient id="heartGradient" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#ffb5d5"/><stop offset=".48" stop-color="#ff4f91"/><stop offset="1" stop-color="#9d3dff"/>
+            </linearGradient>
+            <radialGradient id="heartShine" cx=".3" cy=".22" r=".8">
+              <stop offset="0" stop-color="#fff" stop-opacity=".8"/><stop offset=".35" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+            </radialGradient>
+            <filter id="heartGlow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="8" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+          </defs>
+          <path class="heart-shape" d="M110 190 24 106C-22 60 49-18 110 44c61-62 132 16 86 62z" fill="url(#heartGradient)" filter="url(#heartGlow)"/>
+          <path d="M110 190 24 106C-22 60 49-18 110 44c61-62 132 16 86 62z" fill="url(#heartShine)"/>
+          <path d="M49 58c8-12 21-16 34-11" fill="none" stroke="#fff" stroke-opacity=".7" stroke-width="5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <span class="heart-caption">сен — менің ең жарық жұлдызым</span>
+      <span class="tap-hint">✧ Жұлдыздарды басып көр ✧</span>
+    </section>
+    <h1>Менің әлеміме<br><span>қош келдің</span></h1>
+    <p class="hero-copy">Сен бар жерде менің ғаламым жарық.</p>
+    <a class="round-link" href="universe.html">Ғаламға саяхат <span aria-hidden="true">↗</span></a>
+    <p class="interaction-hint">Аспандағы жұлдыздардың бірін түрт — саған арналған жылы сөзді оқы ✨</p>
+  </main>
+  <div class="compliment" id="compliment" role="status" aria-live="polite" aria-hidden="true"><span class="compliment-star">✦</span><p></p><button type="button" aria-label="Жабу">×</button></div>
+  <footer>жүректен — жұлдыздарға дейін <span>✦</span></footer>
+</body>
+</html>
